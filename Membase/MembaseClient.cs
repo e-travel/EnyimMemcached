@@ -6,6 +6,7 @@ using Enyim.Caching.Memcached;
 using Membase.Configuration;
 using System.Collections.Generic;
 using System.Threading;
+using CountdownEvent = Enyim.Caching.CountdownEvent;
 using KVP_SU = System.Collections.Generic.KeyValuePair<string, ulong>;
 
 namespace Membase

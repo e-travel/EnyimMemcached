@@ -878,7 +878,7 @@ namespace Enyim.Caching
 				// infinity
 				if (validFor == TimeSpan.Zero || validFor == TimeSpan.MaxValue) return 0;
 
-				expiresAt = DateTime.Now.Add(validFor.Value);
+				return (uint) validFor.Value.TotalSeconds;
 			}
 
 			DateTime dt = expiresAt.Value;
